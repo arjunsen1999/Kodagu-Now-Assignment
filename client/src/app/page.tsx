@@ -1,6 +1,9 @@
 "use client";
 import SideNavbar from "@/components/SideNavbar/SideNavbar";
 import TopNavbar from "@/components/TopNavbar/TopNavbar";
+import HeadSection from "@/components/ContainSideBar/HeadSection";
+import MenuSection from "@/components/ContainSideBar/MenuSection";
+import SocialSection from "@/components/ContainSideBar/SocialSection";
 import { Box } from "@chakra-ui/react";
 
 export default function Home() {
@@ -12,7 +15,26 @@ export default function Home() {
           {/* // Side Bar start */}
           <SideNavbar />
           {/* // Side Bar End */}
-        
+          <Box
+            p={"20px 30px"}
+            display={"grid"}
+            gridTemplateColumns={"250px 1fr"}
+            gap={"20px"}
+          >
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+              justifyContent={"flex-start"}
+              gap={"40px"}
+            >
+              <HeadSection />
+              <MenuSection />
+              <SocialSection />
+            </Box>
+            {/* Main Container */}
+            {/* <MainContainer /> */}
+          </Box>
         </Box>
       </Box>
     </>

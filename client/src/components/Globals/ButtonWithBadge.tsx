@@ -1,8 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Button } from "@chakra-ui/react";
-import { Badge } from '@chakra-ui/react'
-
-export default function ButtonWithBadge() {
+import { Badge } from "@chakra-ui/react";
+type ButtonWithBadgeProps = {
+  children: ReactNode;
+  bg: string;
+};
+export default function ButtonWithBadge({
+  children,
+  bg,
+}: ButtonWithBadgeProps) {
   return (
     <>
       <Button
@@ -13,7 +19,16 @@ export default function ButtonWithBadge() {
         borderRadius={"100px"}
         position={"relative"}
       >
-        <Badge bg={"red"} w={"10px"} h={"10px"} position={"absolute"} top={"3px"} right={"0px"} borderRadius={"50%"}></Badge>
+        <Badge
+          bg={bg}
+          w={"10px"}
+          h={"10px"}
+          position={"absolute"}
+          top={"3px"}
+          right={"0px"}
+          borderRadius={"50%"}
+        ></Badge>
+        {children}
       </Button>
     </>
   );

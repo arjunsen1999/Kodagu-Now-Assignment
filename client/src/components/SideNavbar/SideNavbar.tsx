@@ -11,13 +11,13 @@ export default function SideNavbar() {
         position={"relative"}
         borderWidth={"1px"}
         p={"20px"}
-        display={"flex"}
+        display={{base : "none", md : "flex"}}
         flexDirection={"column"}
         alignItems={"center"}
         justifyContent={"space-between"}
       >
         <Box
-          display={"flex"}
+         display={{base : "none", md : "flex"}}
           flexDirection={"column"}
           alignItems={"center"}
           justifyContent={"flex-start"}

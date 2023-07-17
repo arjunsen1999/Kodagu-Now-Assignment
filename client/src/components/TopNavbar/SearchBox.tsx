@@ -10,7 +10,7 @@ import {
 export default function SearchBox() {
   return (
     <>
-      <Box>
+      <Box display={{base : "none", md : "block"}}>
         <InputGroup>
           <InputLeftElement
             pointerEvents="none"

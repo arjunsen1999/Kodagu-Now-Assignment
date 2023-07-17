@@ -39,7 +39,7 @@ export default function TopNavbar() {
         </Box>
         {/* // All Section Start*/}
         <Box
-          display={"flex"}
+          display={{base : "none", lg : "flex"}}
           alignItems={"center"}
           justifyContent={"center"}
           gap={"20px"}
@@ -69,7 +69,7 @@ export default function TopNavbar() {
             <Button
               w={"50px"}
               h={"50px"}
-              bg={"transparent"}
+              bg={{base : "white", md : "transparent"}}
               _hover={{
                 backgroundColor : "transparent"
               }}
@@ -93,7 +93,7 @@ export default function TopNavbar() {
             <SectionListing name="Clayton Santos" />
           </Box>
           <Box
-            display={"flex"}
+            display={{base : "none", lg : "flex"}}
             alignItems={"center"}
             justifyContent={"flex-end"}
             gap={"10px"}

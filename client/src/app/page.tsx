@@ -4,6 +4,7 @@ import TopNavbar from "@/components/TopNavbar/TopNavbar";
 import HeadSection from "@/components/ContainSideBar/HeadSection";
 import MenuSection from "@/components/ContainSideBar/MenuSection";
 import SocialSection from "@/components/ContainSideBar/SocialSection";
+import MainContainer from "@/components/MainContainer/MainContainer";
 import { Box } from "@chakra-ui/react";
 
 export default function Home() {
@@ -11,15 +12,16 @@ export default function Home() {
     <>
      <Box minH={"100vh"} bg={"#F7F8FA"}>
         <TopNavbar />
-        <Box display={"grid"} gridTemplateColumns={"90px 1fr"}>
+        <Box display={"grid"} gridTemplateColumns={{base : "1fr", md : "90px 1fr"}}>
           {/* // Side Bar start */}
           <SideNavbar />
           {/* // Side Bar End */}
           <Box
             p={"20px 30px"}
             display={"grid"}
-            gridTemplateColumns={"250px 1fr"}
+            gridTemplateColumns={{md : "400px", lg : "250px 1fr"}}
             gap={"20px"}
+         
           >
             <Box
               display={"flex"}
@@ -33,7 +35,7 @@ export default function Home() {
               <SocialSection />
             </Box>
             {/* Main Container */}
-            {/* <MainContainer /> */}
+            <MainContainer />
           </Box>
         </Box>
       </Box>

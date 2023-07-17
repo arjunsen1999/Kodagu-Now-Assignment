@@ -12,7 +12,6 @@ const TodoContainer = () => {
         padding={5}
         justifyContent={"center"}
         alignContent={"center"}
-        overflowX={"scroll"}
       >
         {/* Todo Navbar */}
         <TodoNavbar />

@@ -15,9 +15,8 @@ const PopUp = () => {
         gap={10}
         padding={5}
         position={"absolute"}
-        right={"20px"}
-        bottom={"20px"}
-        display={{base : "none", lg : "block"}}
+        right={30}
+        bottom={30}
       >
         <Flex justifyContent={"space-between"} alignItems={"center"}>
           <Flex justifyContent={"center"} alignItems={"center"} gap={3}>

@@ -12,9 +12,9 @@ const TodoNavbar = () => {
       <Grid
         gridTemplateColumns={"repeat(4,230px)"}
         gridTemplateRows={"auto"}
-        justifyContent={"space-between"}
+        justifyContent={"center"}
         alignItems={"flex-start"}
-        gap={"13px"}
+        gap={"43px"}
       >
         {/* TO DO */}
         <Flex

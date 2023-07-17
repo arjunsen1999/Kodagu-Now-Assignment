@@ -9,7 +9,6 @@ const TodoContainerTodoRow = () => {
       <Flex
         flexDirection={"column"}
         gap={2}
-        width={"230px"}
         justifyContent={"center"}
         alignItems={"center"}
       >

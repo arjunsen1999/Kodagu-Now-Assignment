@@ -9,12 +9,12 @@ import TodoContainerDoneRow from "./TodoContainerDoneRow";
 const TodoNavbar = () => {
   return (
     <>
-      <Grid
-        gridTemplateColumns={"repeat(4,230px)"}
-        gridTemplateRows={"auto"}
-        justifyContent={"center"}
+      <Flex
+        width={"100%"}
+        justifyContent={"flex-start"}
         alignItems={"flex-start"}
-        gap={"43px"}
+        gap={{ base: "25px", lg: "30px" }}
+        overflowX={"auto"}
       >
         {/* TO DO */}
         <Flex
@@ -22,6 +22,7 @@ const TodoNavbar = () => {
           gap={8}
           justifyContent={"center"}
           alignItems={"center"}
+          width={{ base: "300px", lg: "230px" }}
         >
           <TodoNavbarLinks name={"TO DO"} leftBorderColor={"#8833FF"} />
           <TodoContainerTodoRow />
@@ -33,6 +34,7 @@ const TodoNavbar = () => {
           gap={8}
           justifyContent={"center"}
           alignItems={"center"}
+          width={{ base: "300px", lg: "230px" }}
         >
           <TodoNavbarLinks name={"IN WORK"} leftBorderColor={"#33BFFF"} />
           <TodoContainerInWorkRow />
@@ -44,6 +46,7 @@ const TodoNavbar = () => {
           gap={8}
           justifyContent={"center"}
           alignItems={"center"}
+          width={{ base: "300px", lg: "230px" }}
         >
           <TodoNavbarLinks name={"REVIEW"} leftBorderColor={"#FFCB33"} />
           <TodoContainerReviewRow />
@@ -55,11 +58,12 @@ const TodoNavbar = () => {
           gap={8}
           justifyContent={"center"}
           alignItems={"center"}
+          width={{ base: "300px", lg: "230px" }}
         >
           <TodoNavbarLinks name={"DONE"} leftBorderColor={"#29CC39"} />
           <TodoContainerDoneRow />
         </Flex>
-      </Grid>
+      </Flex>
     </>
   );
 };

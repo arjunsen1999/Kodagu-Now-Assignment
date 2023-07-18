@@ -67,13 +67,13 @@ export default function TopNavbar() {
             gap={"5px"}
           >
             <Button
-              w={"50px"}
-              h={"50px"}
+              paddingInline={"10px"}
+              paddingBlock={"25px"}
               bg={{base : "white", md : "transparent"}}
               _hover={{
                 backgroundColor : "transparent"
               }}
-              borderRadius={"100px"}
+              borderRadius={"50%"}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

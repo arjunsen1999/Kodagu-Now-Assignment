@@ -10,7 +10,7 @@ export default function HeadSection() {
         flexDirection={"column"}
         gap={6}
         justifyContent={"center"}
-        alignItems={"center"}
+        alignItems={"center"} 
       >
         <Box
           width={"100%"}

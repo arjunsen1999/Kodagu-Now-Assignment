@@ -11,7 +11,7 @@ export default function SocialSection() {
         padding={4}
         w="100%"
         h={"60px"}
-        mt={"100px"}
+        mt={{base:"30px",lg:"100px"}}
         borderRadius={"30px"}
       >
         {/* Call */}

@@ -11,7 +11,7 @@ const MainContainer = () => {
         border={"3px solid #EDEFF2"}
         borderRadius={"10px"}
         position={"relative"}
-        width={{md : "400px", lg : "100%"}}
+        width={{ base: "330px", lg: "75%" }}
       >
         {/* Container Navbar */}
         <ContainerNavbar />

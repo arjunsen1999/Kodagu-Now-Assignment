@@ -4,7 +4,8 @@ import { Avatar, Box, Flex, Text } from "@chakra-ui/react";
 const PopUp = () => {
   return (
     <>
-      <Flex
+      <Box
+        display={{ base: "none", lg: "flex" }}
         width={"450px"}
         height={"340px"}
         borderRadius={"10px"}
@@ -337,7 +338,7 @@ const PopUp = () => {
             </Box>
           </Flex>
         </Flex>
-      </Flex>
+      </Box>
     </>
   );
 };

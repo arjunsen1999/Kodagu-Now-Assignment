@@ -5,47 +5,49 @@ import SocialSection from "@/components/ContainSideBar/SocialSection";
 import MainContainer from "@/components/MainContainer/MainContainer";
 import SideNavbar from "@/components/SideNavbar/SideNavbar";
 import TopNavbar from "@/components/TopNavbar/TopNavbar";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
 export default function Home() {
   return (
     <>
-      <Box width={"100%"} minH={"100vh"} bg={"#F7F8FA"}>
-        <TopNavbar />
-        <Box
-          width={"100%"}
-          display={"grid"}
-          gridTemplateColumns={{ base: "1fr", md: "90px 1fr" }}
-        >
-          {/* // Side Bar start */}
-          <SideNavbar />
-          {/* // Side Bar End */}
-          <Flex
+      <ChakraProvider>
+        <Box width={"100%"} minH={"100vh"} bg={"#F7F8FA"}>
+          <TopNavbar />
+          <Box
             width={"100%"}
-            // p={"20px 30px"}
-            gap={"20px"}
-            flexDirection={{ base: "column", lg: "row" }}
-            justifyContent={"center"}
-            alignItems={"center"}
+            display={"grid"}
+            gridTemplateColumns={{ base: "1fr", md: "90px 1fr" }}
           >
-            <Box
-              width={{ base: "100%", lg: "25%" }}
-              display={"flex"}
-              flexDirection={"column"}
-              alignItems={"center"}
+            {/* // Side Bar start */}
+            <SideNavbar />
+            {/* // Side Bar End */}
+            <Flex
+              width={"100%"}
+              // p={"20px 30px"}
+              gap={"20px"}
+              flexDirection={{ base: "column", lg: "row" }}
               justifyContent={"center"}
-              gap={"40px"}
-              paddingInline={10}
-              marginTop={{ base: 6, lg: 0 }}
+              alignItems={"center"}
             >
-              <HeadSection />
-              <MenuSection />
-              <SocialSection />
-            </Box>
-            {/* Main Container */}
-            <MainContainer />
-          </Flex>
+              <Box
+                width={{ base: "100%", lg: "25%" }}
+                display={"flex"}
+                flexDirection={"column"}
+                alignItems={"center"}
+                justifyContent={"center"}
+                gap={"40px"}
+                paddingInline={10}
+                marginTop={{ base: 6, lg: 0 }}
+              >
+                <HeadSection />
+                <MenuSection />
+                <SocialSection />
+              </Box>
+              {/* Main Container */}
+              <MainContainer />
+            </Flex>
+          </Box>
         </Box>
-      </Box>
+      </ChakraProvider>
     </>
   );
 }

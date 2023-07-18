@@ -1,7 +1,9 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Button } from "@chakra-ui/react";
-
-export default function ButtonIcon({ children }: React.ReactNode) {
+type ButtonIconProps = {
+  children: ReactNode;
+};
+export default function ButtonIcon({ children }: ButtonIconProps) {
   return (
     <>
       <Button
